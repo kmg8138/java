@@ -1,0 +1,69 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args)throws Exception {
+		Scanner s=new Scanner(System.in);
+		StudentDAO dao=new StudentDAO();
+		StudentVO vo=new StudentVO();
+	
+		boolean run=true;
+		
+		while(run) {
+			System.out.println("-----------------------------------------------");
+			System.out.println("1.학생입력|2.학생조회|3.학생목록|4.학생수정|5.학생삭제|6.종료");
+			System.out.println("-----------------------------------------------");
+			System.out.print("메뉴선택>");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+			
+			default:
+				break;
+			case 1:
+				System.out.println("------------------");
+				System.out.println("학생입력");
+				System.out.println("------------------");
+			
+				System.out.print("학번(두자리)>");
+				vo.setSno(s.next());
+				System.out.print("이름>");
+				vo.setSname(s.next());
+				System.out.print("전화번호>");
+				vo.setTel(s.next());
+				try {
+					dao.insert(vo);
+					System.out.println("입력이 완료되었습니다.");
+				}catch(Exception e) {
+					System.out.println("입력오류");
+				}
+				System.out.println();
+				break;
+			case 2:
+				System.out.println("------------------");
+				System.out.println("학생조회");
+				System.out.println("------------------");
+				
+				System.out.print("학번(두자리)>");
+				String sno=s.next();
+				vo=dao.read(sno);
+				System.out.println("성명:"+vo.getSname());
+				System.out.println("전화번호:"+vo.getTel());
+				System.out.println();
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				run=false;
+				
+			}
+		}
+	}
+
+}

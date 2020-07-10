@@ -1,0 +1,35 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		boolean run=true;
+		while(run) {
+			
+			System.out.println("------------------------------------");
+			System.out.println("1.학생수|2.점수입력|3.점수리스트|4.분석|5.종료");
+			System.out.println("------------------------------------");
+			System.out.print("선택:");
+			int menu=s.nextInt();
+			
+			switch(menu) {
+			
+			case 1:
+				System.out.println("");
+			case 2:
+				
+			case 3:
+				
+			case 4:
+				
+			case 5:
+				run=false;
+				System.out.println("프로그램을 종료합니다.");
+			}
+		}
+	}
+
+}

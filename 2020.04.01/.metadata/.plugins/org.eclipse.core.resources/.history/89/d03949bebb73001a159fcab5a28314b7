@@ -1,0 +1,29 @@
+package ex03;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		Report[] report=new Report[2];
+		
+		//Report r1=new Report();
+		
+		report[0]=new Report();
+		report[0].setSno("01");
+		report[0].setSname("이송현");
+		report[0].setKor(79);
+		report[0].setEng(91);
+		report[0].setMat(67);				
+		
+		report[1]=new Report();
+		report[1].setSno("02");
+		report[1].setSname("이송현");
+		report[1].setKor(37);
+		report[1].setEng(97);
+		report[1].setMat(77);
+		
+		for(int i=0; i<report.length; i++) {
+			report[i].printList();
+		}
+	}
+
+}

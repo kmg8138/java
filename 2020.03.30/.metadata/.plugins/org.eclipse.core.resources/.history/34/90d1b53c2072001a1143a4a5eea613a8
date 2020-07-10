@@ -1,0 +1,39 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		
+		boolean run=true;
+		while(run) {
+			int menu=0;
+			
+			System.out.println("------------------------");
+			System.out.println("1.입력|2.출력|3.삭제|4.종료");
+			System.out.println("------------------------");
+			System.out.println("선택>");
+			menu=s.nextInt();
+			
+			switch(menu) {
+			
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				run= false;
+				System.out.println("프로그램 종료");
+				break;
+			default:
+				System.out.println("잘못 입력하였습니다.");
+			}
+			
+		}
+	}
+
+}

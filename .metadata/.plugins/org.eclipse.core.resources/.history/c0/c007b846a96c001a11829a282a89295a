@@ -1,0 +1,15 @@
+package ex01;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		System.out.print("¹è°íÆÄ");
+		System.out.println("ÅÁºº¹ä");
+		
+		//Á¤¼öÇüº¯¼ö
+		int num=100;
+		System.out.println(num);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package ex03;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		String name="냉장고";
+		int price=100;
+		int number=5;
+		int total=500;
+		String remark="우수";
+
+		if(total>=1000) {
+			System.out.println("최" + remark);
+		}else if(total>=500) {
+			System.out.println(remark);
+		}else {
+			System.out.println("보통");
+		}
+	}
+
+}

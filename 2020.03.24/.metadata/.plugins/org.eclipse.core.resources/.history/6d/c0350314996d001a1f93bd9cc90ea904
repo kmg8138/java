@@ -1,0 +1,37 @@
+package ex06;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		//for1();
+		//for2();
+		for3();
+	}
+	
+	//0~100까지의 짝수 합 출력
+	public static void for3() {
+		System.out.println("***예제3***");
+		
+		int zzak=0;
+		for(int i=0; i<=100; i=i+2) {
+			zzak=zzak+i;
+		}
+	}
+	//1~100까지의 합을 출력
+	public static void for2() {
+		System.out.println("***예제2***");
+		
+		int sum=0;
+		for(int i=1; i<=100; i++) {
+			sum=sum + i;
+		}
+		System.out.println("1~100까지의 합계>" + sum);
+	}
+	//5까지 반복출력
+	public static void for1() {
+		System.out.println("*****예제1*****");
+		for(int i=0; i<=50; i=i+2) {
+			System.out.println(i);
+		}
+	}
+}

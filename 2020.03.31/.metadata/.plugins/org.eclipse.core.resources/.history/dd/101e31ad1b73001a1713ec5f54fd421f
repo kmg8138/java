@@ -1,0 +1,14 @@
+package ex04;
+
+public class Sample {
+
+	public static void main(String[] args) {
+		System.out.println("------------------------------");
+		System.out.println("1.성적입력|2.성적목록|3.성적조회|4.종료");
+		System.out.println("------------------------------");
+		System.out.print("선택>");
+		
+
+	}
+
+}
